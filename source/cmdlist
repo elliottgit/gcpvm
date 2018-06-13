@@ -1,0 +1,15 @@
+ssh-add ~/.ssh/id_rsa
+
+gcloud compute instances create myvm --image-family ubuntu-1604-lts --image-project ubuntu-os-cloud
+
+vmip = input("Enter vm IP address: ")
+# cmd = ("You entered " + str(var))
+
+cmd = 'ssh -i c:\Users\fning\.ssh\id_rsa fning@' + str(var)
+
+print(cmd)
+
+
+instance-templates
+
+gcloud compute instances create myvm --source-instance-templates myvm-temp
